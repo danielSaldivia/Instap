@@ -13,5 +13,10 @@ namespace Instap.Controllers
         {
             return View();
         }
+        // GET: Instap
+        public ActionResult Perfil()
+        {
+            return View();
+        }
     }
 }
