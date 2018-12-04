@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="661aeeae7cb04b68b845153853df515c" Name="Diagram1">
+        <EntityTypeShape EntityType="instapModel.Comentario" Width="1.5" PointX="7.5" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="instapModel.Like" Width="1.5" PointX="7.5" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="instapModel.Publicacion" Width="1.5" PointX="5.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="instapModel.TipoUsuario" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="instapModel.Usuario" Width="1.5" PointX="3" PointY="2.125" IsExpanded="true" />
+        <AssociationConnector Association="instapModel.FK_Comentario_perfil" ManuallyRouted="false" />
+        <AssociationConnector Association="instapModel.FK_Comentario_publish" ManuallyRouted="false" />
+        <AssociationConnector Association="instapModel.FK_Like_ToTable" ManuallyRouted="false" />
+        <AssociationConnector Association="instapModel.FK_Publicacion_ToTable" ManuallyRouted="false" />
+        <AssociationConnector Association="instapModel.FK_Usuario_tipo" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
