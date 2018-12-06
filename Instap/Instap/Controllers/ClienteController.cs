@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Data.Entity;
+
 
 namespace Instap.Controllers
 {
     public class ClienteController : Controller
     {
+
+    
         // GET: Cliente
         public ActionResult Index()
         {
@@ -21,8 +25,17 @@ namespace Instap.Controllers
         }
 
         // GET: Cliente/Create
-        public ActionResult Create()
+        public ActionResult Create( )
         {
+            if (ModelState.IsValid) {
+                try
+                {
+                    
+                }
+                catch {
+                    
+                }
+            }
             return View();
         }
 
