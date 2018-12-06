@@ -263,6 +263,7 @@
     <Content Include="scss\_responsive.scss" />
     <Content Include="scss\_theme_color.scss" />
     <Content Include="Views\Instap\Perfil.cshtml" />
+    <Content Include="Views\Instap\Publicacion.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
