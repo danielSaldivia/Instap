@@ -3,210 +3,147 @@
     Layout = null;
 }
 
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
+</head>
+<body>
+    <title>Carlos Ramírez</title>
+
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <!-- Title -->
-    <title>Carlos Ramírez</title>
     <!-- Favicon -->
     <link rel="icon" href="/img/core-img/favicon.ico">
     <!-- Style CSS -->
-    <link href="~/style.css" rel="stylesheet" />
+    <link href="/style.css" rel="stylesheet">
 
-</head>
-
-<body>
     <!-- Preloader -->
-    <div id="preloader">
-        <div class="preload-content">
-            <div id="original-load"></div>
-        </div>
-    </div>
-
     <!-- Subscribe Modal -->
-    <div class="subscribe-newsletter-area">
-        <div class="modal fade" id="subsModal" tabindex="-1" role="dialog" aria-labelledby="subsModal" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <div class="modal-body">
-                        <h5 class="title">Subscribe to my newsletter</h5>
-                        <form action="#" class="newsletterForm" method="post">
-                            <input type="email" name="email" id="subscribesForm2" placeholder="Your e-mail here">
-                            <button type="submit" class="btn original-btn">Subscribe</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- ##### Header Area Start ##### -->
+    <!-- ##### Barra navegacion ##### -->
     <header class="header-area">
-
-        <!-- Top Header Area -->
-        <div class="top-header">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center">
-                    <!-- Breaking News Area -->
-                    <div class="col-12 col-sm-8">
-                        <div class="breaking-news-area">
-                            <div id="breakingNewsTicker" class="ticker">
-                                <ul>
-                                    <li><a href="#">Bienvenido a</a></li>
-                                    <li><a href="#"><img src="/img/logo.png" alt="" /></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Top Social Area -->
-                    <div class="col-12 col-sm-4">
-                        <div class="top-social-area">
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Logo Area -->
-        <div class="logo-area text-center">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center">
-                    <div class="col-12">
-                        <a href="index" class="original-logo"><img src="/img/core-img/logo.png" alt="" style="width: 40%"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- Nav Area -->
-        <div class="original-nav-area" id="stickyNav">
-            <div class="classy-nav-container breakpoint-off">
-                <div class="container">
-                    <!-- Classy Menu -->
-                    <nav class="classy-navbar justify-content-between">
+        <div id="stickyNav-sticky-wrapper" class="sticky-wrapper is-sticky" style="height: 70px;">
+            <div class="original-nav-area" id="stickyNav" style="width: 1349px; position: fixed; top: 0px; z-index: auto;">
+                <div class="classy-nav-container breakpoint-off light left">
+                    <div class="container">
 
-                        <!-- Subscribe btn -->
-                        <div class="subscribe-btn col-lg-2">
-                            <a href="#" class="btn subscribe-btn" data-toggle="modal" data-target="#subsModal">Iniciar sesión</a>
-                        </div>
+                        <!-- Classy Menu -->
+                        <nav class="classy-navbar justify-content-between">
+
+                            <!-- Breaking News Area -->
+
+                            <div class="col-2">
+                                <div class="breaking-news-area">
+                                    <div id="breakingNewsTicker" class="ticker" style="height: 24px;">
+                                        <ul>
 
 
-
-                        <div class="" id="search-wrapper">
-                            <form action="#">
-                                <input type="text" id="search" placeholder="Busca algo...">
-                                <div id="close-icon"></div>
-                                <input class="d-none" type="submit" value="">
-                            </form>
-                        </div>
-
-                        <!-- Navbar Toggler -->
-                        <div class="classy-navbar-toggler">
-                            <span class="navbarToggler"><span></span><span></span><span></span></span>
-                        </div>
-
-                        <!-- Menu -->
-                        <div class="classy-menu" id="originalNav">
-                            <!-- close btn -->
-                            <div class="classycloseIcon">
-                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                                            <li class="tickerHook" style="top: 0px; left: 0px; position: absolute; display: block; opacity: 1; z-index: 99;"><a href="index"><img src="/img/logo.png" alt=""></a></li>
+                                            <li class="" style="top: -3em; left: 0px; position: absolute; display: block; opacity: 0; z-index: 98;"><a href="index">Bienvenido a</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
 
-                            <!-- Nav Start -->
-                            <div class="classynav">
-                                <ul>
-                                    <li><a href="perfil">Perfil</a></li>
-                                    <li><a href="about-us.html">Inicio</a></li>
-                                    <li><a href="coming-soon.html">Explorar</a></li>
-                                </ul>
+                            <div class="" id="search-wrapper">
+                                <form action="#">
+                                    <input type="text" id="search" placeholder="Busca algo...">
+                                    <div id="close-icon" style="display: none;" class=""></div>
+                                    <input class="d-none" type="submit" value="">
+                                </form>
                             </div>
-                            <!-- Nav End -->
-                        </div>
-                    </nav>
+
+                            <!-- Menu -->
+                            <div class="classy-menu" id="originalNav">
+                                <!-- close btn -->
+                                <div class="classycloseIcon">
+                                    <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                                </div>
+                                <!-- Nav Start -->
+                                <div class="classynav">
+                                    <ul>
+                                        <li><a href="perfil">Perfil</a></li>
+                                        <li><a href="index">Inicio</a></li>
+                                        <li><a href="coming-soon.html">Explorar</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Nav End -->
+                            </div>
+                            <!-- Top Social Area -->
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- ##### Instagram Feed Area Start ##### -->
-    <div class="instagram-feed-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="insta-title">
-                        <h5>Follow us  Instagram</h5>
+
+    <div class="container mt-50">
+        <div class="row">
+            <!-- Single Blog Area  -->
+            <div class="col-12 single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="single-blog-thumbnail align-items-center" style="width:75%; margin-left:90px;">
+                            <img alt="Cambiar foto del perfil" class="be6sR" src="https://instagram.fpmc2-1.fna.fbcdn.net/vp/ba2359ef4cf5ca7ffdd9f951453ff4ea/5CB04331/t51.2885-19/s150x150/28158854_1362953423810945_7916385889222131712_n.jpg" style="border-radius: 50%;">
+                            <div class="post-date">
+                                <a href="#">12 <span>march</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-7 ml-30">
+                        <!-- Blog Content -->
+                        <div class="single-blog-content">
+                            <div class="line"></div>
+                            <h2>Lostkar190</h2>
+                            <div class="row">
+                                <p class="post-tag col-auto" style="font-size:12px;">26 Publicaciones</p><p class="post-tag" style="font-size:12px;">202 Seguidores</p>
+                            </div>
+                            <h5>Carlos Felipe Ramírez</h5>
+                            <p>
+                                Words are flowing out like endless rain into a paper cup,
+                                They slither while they pass, they slip away across the universe
+                                Pools of sorrow, waves of joy are drifting through my open mind,
+                                Possessing and caressing me.<br>
+                                Jai guru deva om
+                                Nothing's gonna change my world.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Instagram Slides -->
-        <div class="instagram-slides owl-carousel">
-            <!-- Single Insta Feed -->
-            <div class="single-insta-feed">
-                <img src="/img/instagram-img/1.png" alt="">
-                <!-- Hover Effects -->
-                <div class="hover-effects">
-                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
-                </div>
-            </div>
-            <!-- Single Insta Feed -->
-            <div class="single-insta-feed">
-                <img src="/img/instagram-img/2.png" alt="">
-                <!-- Hover Effects -->
-                <div class="hover-effects">
-                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
-                </div>
-            </div>
-            <!-- Single Insta Feed -->
-            <div class="single-insta-feed">
-                <img src="/img/instagram-img/3.png" alt="">
-                <!-- Hover Effects -->
-                <div class="hover-effects">
-                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
-                </div>
-            </div>
-            <!-- Single Insta Feed -->
-            <div class="single-insta-feed">
-                <img src="/img/instagram-img/4.png" alt="">
-                <!-- Hover Effects -->
-                <div class="hover-effects">
-                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
-                </div>
-            </div>
-            <!-- Single Insta Feed -->
-            <div class="single-insta-feed">
-                <img src="/img/instagram-img/5.png" alt="">
-                <!-- Hover Effects -->
-                <div class="hover-effects">
-                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
-                </div>
-            </div>
-            <!-- Single Insta Feed -->
-            <div class="single-insta-feed">
-                <img src="/img/instagram-img/6.png" alt="">
-                <!-- Hover Effects -->
-                <div class="hover-effects">
-                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
-                </div>
-            </div>
-            <!-- Single Insta Feed -->
-            <div class="single-insta-feed">
-                <img src="/img/instagram-img/7.png" alt="">
-                <!-- Hover Effects -->
-                <div class="hover-effects">
-                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
     </div>
+
+    <div class="mb-15 text-center">
+        <a class="" id="scrollUp">PUBLICACIONES</a>
+    </div>
+
+    <!-- ##### Instagram Feed Area Start ##### -->
+    <!-- Instagram Slides -->
+    <div class="row mb-30" style="max-width:935px; min-width: 600px; margin: 0 auto;">
+        <a href="Publicacion" class="col-4">
+            <img src="https://scontent-scl1-1.cdninstagram.com/vp/a185dee9d973853d931a26b88d9130c7/5CA54929/t51.2885-15/sh0.08/e35/s640x640/40653865_304363493683941_9022640446333142937_n.jpg" alt="" style="width:290px">
+            <!-- Hover Effects -->
+        </a>
+        <a href="" class="col-4">
+            <img src="https://scontent-scl1-1.cdninstagram.com/vp/121907826bf4f1a02f030bed55765571/5C9D03D6/t51.2885-15/sh0.08/e35/c135.0.810.810/s640x640/39997172_298117730776723_3846451202263215715_n.jpg" alt="" style="width:290px">
+            <!-- Hover Effects -->
+
+        </a>
+        <a href="" class="col-4">
+            <img src="https://scontent-scl1-1.cdninstagram.com/vp/2fbb0ec6b60a10627e5b162e1b4c8029/5C9099A8/t51.2885-15/sh0.08/e35/s640x640/34287576_245323776219537_5027818862796603392_n.jpg" alt="" style="width:290px">
+            <!-- Hover Effects -->
+
+        </a>
+
+    </div>
+    </div>
+
     <!-- ##### Instagram Feed Area End ##### -->
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area text-center">
@@ -214,35 +151,28 @@
             <div class="row">
                 <div class="col-12">
 
-
-                    <!-- Footer Social Area -->
-                    <div class="footer-social-area mt-30">
-                        <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    </div>
                 </div>
             </div>
         </div>
 
         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-        Copyright &copy;
-        <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+        Copyright ©
+        <script>document.write(new Date().getFullYear());</script>2018 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 
     </footer>
     <!-- ##### Footer Area End ##### -->
     <!-- jQuery (Necessary for All JavaScript Plugins) -->
-    <script src="~/js/jquery/jquery-2.2.4.min.js"></script>
+    <script src="/js/jquery/jquery-2.2.4.min.js"></script>
 
     <!-- Popper js -->
-    <script src="~/js/popper.min.js"></script>
+    <script src="/js/popper.min.js"></script>
     <!-- Bootstrap js -->
-    <script src="~/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
     <!-- Plugins js -->
-    <script src="~/js/plugins.js"></script>
+    <script src="/js/plugins.js"></script>
     <!-- Active js -->
-    <script src="~/js/active.js"></script>
+    <script src="/js/active.js"></script><a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647; display: none;">Top</a>
 
 </body>
-
-</html>
+</html>s
