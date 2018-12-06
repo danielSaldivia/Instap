@@ -155,8 +155,10 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InstapController.cs" />
+    <Compile Include="Controllers\PerfilController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -318,11 +320,10 @@
     <Content Include="scss\_responsive.scss" />
     <Content Include="scss\_theme_color.scss" />
     <Content Include="Views\Instap\Perfil.cshtml" />
-    <Content Include="Views\Instap\Registrar.cshtml" />
+    <Content Include="Views\Cliente\Index.cshtml" />
+    <Content Include="Views\Perfil\Vista.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Registrar\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
