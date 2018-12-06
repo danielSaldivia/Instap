@@ -321,7 +321,7 @@
     <Content Include="scss\_theme_color.scss" />
     <Content Include="Views\Instap\Perfil.cshtml" />
     <Content Include="Views\Cliente\Index.cshtml" />
-    <Content Include="Views\Perfil\Vista.cshtml" />
+    <Content Include="Views\Perfil\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

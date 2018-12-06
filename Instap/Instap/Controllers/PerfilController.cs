@@ -9,7 +9,7 @@ namespace Instap.Controllers
     public class PerfilController : Controller
     {
         // GET: Perfil
-        public ActionResult Vista()
+        public ActionResult Index()
         {
             return View();
         }
