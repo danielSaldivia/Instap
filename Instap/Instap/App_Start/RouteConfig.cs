@@ -16,7 +16,18 @@ namespace Instap
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Instap", action = "Index", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name: "Cliente",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Cliente", action = "Index", id = UrlParameter.Optional }
+            );
+            routes.MapRoute(
+                name: "Perfil",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Perfil", action = "Vista", id = UrlParameter.Optional }
             );
         }
     }

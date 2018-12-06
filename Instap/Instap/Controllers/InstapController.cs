@@ -18,9 +18,6 @@ namespace Instap.Controllers
         {
             return View();
         }
-        public ActionResult Registrar()
-        {
-            return View();
-        }
+        
     }
 }
